@@ -104,7 +104,7 @@ M.config = function()
             name = "tests",
             icon = "",
             matcher = function(buf)
-              return buf.filename:match "_spec" or buf.filename:match "test"
+              return buf.filename:match "_spec" or buf.filename:match "test_"
             end,
           },
           {
@@ -125,7 +125,7 @@ M.config = function()
             name = "docs",
             icon="",
             matcher = function(buf)
-              local list = List { "md", "txt", "org", "norg", "wiki" }
+              local list = List { "md", "txt", "org", "norg", "wiki", "rst" }
               return list:contains(fn.fnamemodify(buf.path, ":e"))
             end,
           },

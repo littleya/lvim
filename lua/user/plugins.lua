@@ -46,6 +46,9 @@ M.config = function()
       -- cond = lvim.builtin.themes.doom_one.condition(),
     },
     {
+      "dracula/vim",
+    },
+    {
       "ray-x/lsp_signature.nvim",
       config = function()
         require("user.configurations.lsp_signature").config()
@@ -257,7 +260,7 @@ M.config = function()
       "kevinhwang91/rnvimr",
     },
     {
-      "dracula/vim",
+      "arkav/lualine-lsp-progress",
     }
   }
 end
