@@ -169,6 +169,14 @@ lvim.lsp.automatic_servers_installation = true
 -- =============================
 lvim.builtin.project.datapath = vim.fn.stdpath('data')
 
+-- Configure copilot
+-- =================
+-- Issue link: https://github.com/hrsh7th/nvim-cmp/issues/505
+-- let g:copilot_no_tab_map = v:true
+-- let g:copilot_assume_mapped = v:true
+vim.g.copilot_no_tab_map = true
+vim.g.copilot_assume_mapped = true
+
 -- Customization
 -- =============
 lvim.builtin.lastplace = { active = true }
@@ -202,3 +210,4 @@ require("user.plugins").config()
 -- =========================================
 -- require("user.keybindings").config()
 require("user.configurations.whichkey").config()
+
